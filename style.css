@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,500;0,600;0,700;1,500&family=Caramel&family=Poppins:wght@300;500;600;700;900&family=Saira+Semi+Condensed:wght@100;300;600;700;800&family=Satisfy&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #input{
+    margin-top: 3%;
+     
+  }  
+  h1{
+    font-family:Satisfy;
+    font-size: 3.2vw;
+  }
+
+  h2{
+    font-family: Saira Semi Condensed;
+  }
+
+
+  #text{
+    border-radius: 20px 20px 20px 20px;
+    
+  }
+  
+  
+  .ott{
+    height: 50vh;
+    width: auto;
+    border-radius: 5% 5% 5% 5%;
+    
+  }
+  
+  
+  .set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #head{
+    background-image: url("https://www.das-landerer.com/fileadmin/userdaten/bilder/abendessen/content/Restaurant-Abendessen-in-Serfaus-Fiss-Ladis-04.jpg");
+    background-size: 100% 100%;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 5%;
+  }
+  
+  body{
+  background-image: linear-gradient(to right, rgb(247, 246, 246),rgb(247, 240, 240) , rgb(214, 211, 212));;
+  }
+  
+  #input{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  
+  
+  #button{
+    color: white;
+    background-color: rgb(78, 121, 111);
+    height: 72%;
+    border-radius: 15px 15px 15px 15px;
+    margin-left: 0.5vw;
+    width: 70px;
+    height: 26px;
+  }
+  
+  input{
+    height: 3.2vh;
+  
+  }
+  
+  .cent{
+    text-align: center;
+    height: 100%;
+  }
+  
+  #ingredient{
+    color: rgb(20, 19, 19);
+    background-color: rgb(231, 193, 193);
+    height: 10%;
+    width: 70%;
+    font-size: 25px;
+    align-items: center;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow:0 4px 8px 0 white, 0 6px 20px 0 white;
+  }
+  
+  .ingredlist{
+    background-color: rgb(194, 146, 168);
+    height: auto;
+    width: 17vw;
+    border-radius: 5%;
+    box-shadow:0 4px 8px 0 white, 0 6px 20px 0 white;
+  }
+  
+  .list{
+    display: flex;
+    font-size: 20px;
+    justify-content: left;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+  
+  #odd{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: black;
+    height: 20vh;
+    width: 50vw;
+    margin-left: 1vw;
+  }
+  
+  
+  #grid{
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-row-gap: 4%;
+    margin-left: 2%;
+    color: white;
+  }
+  
+  #main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5%;
+    width: auto;
+    height: 50vh;
+    box-shadow:0 4px 8px 0 rgb(137, 101, 101), 0 6px 20px 0 rgb(87, 48, 48);
+    animation: zoom-in-zoom-out 3s ease-in infinite;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+  
+  .division{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .chef{
+    margin-bottom: 6%;
+  }
+  
+  .modal{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.383);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  #ingredients{
+    margin-top: -35px;
+    padding: 33px;
+  }
+  .modal-body {
+    background-color: #4a8877;
+    width: 30%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow:0 4px 8px 0 rgb(113, 102, 102), 0 6px 20px 0 rgb(105, 87, 87);
+  }
+  #name{
+    margin-top: -30px;
+    text-align: center;
+  }
+  
+  #modal-close{
+    width: fit-content;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    cursor: pointer;
+   
+  }
+  
+  .modal-body h2{
+    margin-bottom: 0;
+  }
+  
+  #modal-content{
+    max-height: 80%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow:scroll;
+    /* overflow: hidden; */
+    padding-left: 2rem;
+    margin-top: -25px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(231, 0, 0, 0.2)
+  }
+  
+  #container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 4.5%;
+    grid-row-gap: 2%;
+    color: white;
+    width: 60vw;
+    margin-left: 2%;
+    font-size: 30px;
+  }
+  
+  #results{
+    color: rgb(23, 22, 22);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 13%;
+  }
+  
+  .name{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  .naam{
+    color: #0f0e0e;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -10%;
+    margin-left: 45%;
+    width: 23%;
+    font-weight: 800;
+  }
+  
+  .random{
+    height: 45vh;
+    width: 30vw;
+    border-radius: 5% 5% 0% 0%;
+  }
+  
+  #btn{
+    font-size: 20px;
+    text-align: center;
+    margin: 3%;
+    background-color: rgb(220, 204, 216);
+    border-radius: 30px 30px 30px 30px;
+    height: 6vh;
+    width: 9vw;
+    margin-left: 34%;
+    cursor: pointer;
+  }
+  #btn:hover{
+    background-color: rgb(111, 74, 74);
+    color: white;
+  }
+  
+  #idcheck{
+    color: rgb(198, 196, 177);
+    background-color: rgb(12, 12, 12);
+    width: 8vw;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 34%;
+    cursor: pointer;
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+  
+  .toset{
+    background-color: #ac7d82;
+    height: auto;
+    width: 30vw;
+    border-radius: 5% ;
+    box-shadow:0 4px 8px 0 rgb(101, 87, 87), 0 6px 20px 0 rgb(85, 59, 59);
+  }
+  
+  .centre{
+    color: black;
+    text-align: center;
+  }
+  
+  .logo{
+    height: 150px;
+    width: 230px;
+  }
+  
+  .chefimage{
+    height: 450px;
+     width: 450px; 
+  }
+  
+  .diff{
+    height: auto;
+  }
+  
+  
+  @media screen and (max-width:600px){
+  
+  .logo{
+    height: 60px;
+    width: 130px;
+  }
+  h1{
+    font-size: 6vw;
+  }
+  
+  h2{
+    font-size: 3vw;
+  }
+  .chefimage{
+    height: 120px;
+    width: 100px;
+  }
+  
+  #head{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+  
+  .name{
+    font-size: 10px;
+  }
+  .naam{
+    font-size: 10px;
+    margin-top: -10%;
+    text-align: center;
+    margin-left: 43%;
+  }
+  
+  .toset{
+    height: auto;
+    width: auto;
+  }
+  
+  .random{
+    height: 115px;
+    width: 152px;
+  }
+  
+  #container{
+    font-size: 16px;
+    grid-column-gap: 15.5%;
+    margin-left: 5%;
+    grid-template-columns: repeat(2,auto);
+  }
+  
+  
+  
+  #results{
+    font-size: 15px;
+  }
+  
+  .modal-body{
+    width: 35%;
+  }
+  
+  #modal-content{
+    margin-left: -18%;
+  }
+  
+  #ingredients{
+    font-size: 10px;
+    margin-left: -15%;
+  }
+  .ott{
+    height: 87px;
+    width: auto;
+  }
+  
+  #ingredient{
+    font-size: 6px;
+    height: 2vh;
+    width: 18vw;
+  }
+  
+  .ingredlist{
+    height: auto;
+  }
+  
+  .cent{
+    height: auto;
+  }
+  
+  #btn{
+    font-size: 6px;
+      text-align: center;
+      margin: 3% 3% 3% 34%;
+      border-radius: 30px 30px 30px 30px;
+      height: 3vh;
+      width: 10vw;
+      cursor: pointer;
+  }
+  
+  .list{
+    font-size: 7px;
+  }
+  
+  #main{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 10%;
+  }
+  
+  #odd{
+    margin-left: 1vw;
+    font-size: 5px;
+    height: 6vh;
+    position: unset;
+    right: 0;
+  }
+  #text{
+    width: 25vw;
+    height: 1.5vh;
+  }
+  
+  input{
+    margin-left: 5%;
+    font-size: 4px;
+  }
+  
+  #button{
+    height: 1.9vh;
+    font-size: 4.5px;
+    width: 10vw;
+  }
+  
+  
+  
+  }
